@@ -1,0 +1,24 @@
+services:
+  app:
+    build: .
+    container_name: osteo-cassandre-hode
+    env_file: .env
+    restart: unless-stopped
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.osteohode.rule=Host(`cassandre-hode-osteo.fr`) || Host(`www.cassandre-hode-osteo.fr`)"
+      - "traefik.http.routers.osteohode.entrypoints=websecure"
+      - "traefik.http.routers.osteohode.tls=true"
+      - "traefik.http.routers.osteohode.tls.certresolver=resolverhttp"
+      - "traefik.http.services.osteohode.loadbalancer.server.port=3000"
+      - "traefik.http.middlewares.osteohode-wwwredirect.redirectregex.regex=^https://www\\.cassandre-hode-osteo\\.fr/(.*)"
+      - "traefik.http.middlewares.osteohode-wwwredirect.redirectregex.replacement=https://cassandre-hode-osteo.fr/$${1}"
+      - "traefik.http.middlewares.osteohode-wwwredirect.redirectregex.permanent=true"
+      - "traefik.http.routers.osteohode.middlewares=osteohode-wwwredirect"
+
+networks:
+  web:
+    external: true

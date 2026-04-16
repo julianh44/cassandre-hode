@@ -1,0 +1,90 @@
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/cormorant-garamond/700.css";
+@import "@fontsource/epilogue/400.css";
+@import "@fontsource/epilogue/500.css";
+@import "@fontsource/epilogue/600.css";
+
+:root {
+  --color-bg: #EDC6AF;
+  --color-dark: #300F16;
+  --color-cream: #EDC6AF;
+  --color-accent: #D4A98B;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Epilogue", system-ui, sans-serif;
+
+  --max-width: 720px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-dark);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+a { color: inherit; text-decoration: none; }
+
+img { max-width: 100%; display: block; }
+
+.section {
+  padding: 4rem 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section__title {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 1rem;
+}
+
+.section__divider {
+  width: 120px;
+  height: 3px;
+  background: var(--color-dark);
+  margin: 0 auto 2rem;
+  border: none;
+}
+
+.section p {
+  margin: 0 0 1.2rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --max-width: 860px;
+  }
+  .section {
+    padding: 5rem 2.5rem;
+  }
+  .section__title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --max-width: 960px;
+  }
+  .section {
+    padding: 6rem 2rem;
+  }
+}
