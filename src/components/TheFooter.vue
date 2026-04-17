@@ -6,7 +6,7 @@
         <a href="#" aria-label="Facebook" class="footer__social">
           <svg viewBox="0 0 320 512" width="14" height="14" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
         </a>
-        <a href="#" aria-label="Instagram" class="footer__social">
+        <a href="https://www.instagram.com/cassandre_osteoanimalier/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
         </a>
       </div>
