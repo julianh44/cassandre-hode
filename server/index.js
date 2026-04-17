@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const rateLimit = require('express-rate-limit')
 const transporter = require('./mailer')
-const { isValidEmail, requireString } = require('./validate')
+const { isValidEmail, isValidPhone, requireString } = require('./validate')
 
 const app = express()
 const PORT = process.env.PORT || 3000
@@ -34,6 +34,7 @@ app.post('/api/contact', async (req, res) => {
 
   const telErr = requireString(telephone, 'Téléphone', { min: 5, max: 30 })
   if (telErr) errors.push(telErr)
+  else if (!isValidPhone(telephone)) errors.push('Téléphone : numéro invalide')
 
   const emailErr = requireString(email, 'Email', { max: 150 })
   if (emailErr) errors.push(emailErr)

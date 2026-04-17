@@ -7,7 +7,14 @@
       </label>
       <label>
         <span>TÉLÉPHONE</span>
-        <input v-model="form.telephone" type="tel" required maxlength="30" />
+        <input
+          v-model="form.telephone"
+          type="tel"
+          required
+          maxlength="30"
+          pattern="^(\+33|0)[\s.\-]?[1-9](?:[\s.\-]?\d{2}){4}$"
+          title="Numéro français, ex. 06 71 30 03 21"
+        />
       </label>
     </div>
     <label>

@@ -50,18 +50,21 @@ export default { name: 'ContactSection', components: { ContactForm } }
 }
 .contact__left {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
+
 .contact__info {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-  margin-bottom: 1.5rem;
+  gap: 1rem;
 }
 .contact__item {
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
-  font-size: 0.95rem;
+  gap: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   transition: opacity 0.2s;
 }
@@ -77,15 +80,14 @@ export default { name: 'ContactSection', components: { ContactForm } }
 .contact__socials {
   display: flex;
   gap: 0.75rem;
-  margin-bottom: 1.5rem;
 }
 .contact__social {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  background: rgba(44, 18, 22, 0.08);
+  width: 42px;
+  height: 42px;
+  background: rgba(44, 18, 22, 0.1);
   border-radius: 50%;
   color: var(--color-dark);
   transition: background 0.2s;
@@ -114,18 +116,19 @@ export default { name: 'ContactSection', components: { ContactForm } }
 @media (min-width: 768px) {
   .contact__layout {
     flex-direction: row;
-    gap: 3rem;
-    align-items: flex-start;
+    gap: 2.5rem;
+    align-items: stretch;
   }
   .contact__left {
     flex: 1;
-    padding-top: 2.8rem;
+    justify-content: flex-end;
   }
   .contact__right {
-    flex: 1.2;
+    flex: 1.1;
   }
+
   .contact__photo {
-    max-height: 200px;
+    aspect-ratio: 5/3;
   }
 }
 </style>
