@@ -47,9 +47,7 @@ app.post('/api/contact', async (req, res) => {
     return res.status(400).json({ error: errors.join(', ') })
   }
 
-  const text = `Nouveau message depuis cassandre-hode-osteo.fr
-
-Nom : ${nom}
+  const text = `Nom : ${nom}
 Téléphone : ${telephone}
 Email : ${email}
 
@@ -58,7 +56,6 @@ ${message}
 `
 
   const html = `
-    <h2>Nouveau message depuis cassandre-hode-osteo.fr</h2>
     <p><strong>Nom :</strong> ${escapeHtml(nom)}</p>
     <p><strong>Téléphone :</strong> ${escapeHtml(telephone)}</p>
     <p><strong>Email :</strong> ${escapeHtml(email)}</p>
