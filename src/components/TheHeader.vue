@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <router-link to="/" class="header__logo">
-      <img src="@/assets/logo/logo-with-text.jpg" alt="Cassandre Hodé — Ostéopathe animalier" />
+      <img src="@/assets/logo/logo-with-text.webp" alt="Cassandre Hodé — Ostéopathe animalier" />
     </router-link>
     <nav class="header__nav">
       <a href="#presentation">Présentation</a>

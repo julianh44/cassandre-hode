@@ -81,11 +81,11 @@ export default {
 <style scoped>
 .contact-form {
   position: relative;
-  background: rgba(48, 15, 22, 0.04);
+  background: rgba(44, 18, 22, 0.04);
   border-radius: 12px;
   padding: 2rem 1.5rem;
-  margin: 2rem auto 0;
-  max-width: 560px;
+  margin: 0;
+  max-width: none;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@ export default {
 .contact-form input,
 .contact-form textarea {
   border: none;
-  border-bottom: 1.5px solid rgba(48, 15, 22, 0.25);
+  border-bottom: 1.5px solid rgba(44, 18, 22, 0.25);
   background: transparent;
   padding: 0.5rem 0;
   font-family: inherit;

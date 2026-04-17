@@ -11,7 +11,7 @@
         <hr />
         <a href="#contact" @click="$emit('close')">Comment me contacter ?</a>
       </nav>
-      <img src="@/assets/logo/logo-mark.jpg" alt="" class="burger-logo" />
+      <img src="@/assets/logo/logo-mark-dark.webp" alt="" class="burger-logo" />
     </div>
   </teleport>
 </template>
@@ -69,9 +69,9 @@ export default {
   opacity: 0.5;
 }
 .burger-logo {
-  width: 80px;
+  width: 140px;
   margin-top: 3rem;
   opacity: 0.9;
-  border-radius: 50%;
+  border-radius: 12px;
 }
 </style>

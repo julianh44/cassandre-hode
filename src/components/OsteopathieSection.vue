@@ -15,13 +15,13 @@
     </blockquote>
     <div class="osteo__grid">
       <div class="osteo__grid-item">
-        <img src="@/assets/images/osteo-vache.jpg" alt="Ostéopathie sur une vache" />
+        <img src="@/assets/images/osteo-vache.webp" alt="Ostéopathie sur une vache" />
       </div>
       <div class="osteo__grid-item">
-        <img src="@/assets/images/osteo-veau.jpg" alt="Ostéopathie sur un veau" />
+        <img src="@/assets/images/osteo-veau.webp" alt="Ostéopathie sur un veau" />
       </div>
       <div class="osteo__grid-item">
-        <img src="@/assets/images/osteo-cheval-dos.jpg" alt="Ostéopathie sur un cheval" />
+        <img src="@/assets/images/osteo-cheval-dos.webp" alt="Ostéopathie sur un cheval" class="osteo__img-cheval" />
       </div>
     </div>
   </section>
@@ -37,7 +37,7 @@ export default { name: 'OsteopathieSection' }
   max-width: 500px;
   margin: 2.5rem auto;
   padding: 2rem 2.5rem;
-  background: rgba(48, 15, 22, 0.06);
+  background: rgba(44, 18, 22, 0.06);
   border-radius: 12px;
   font-family: var(--font-serif);
   font-size: 1.15rem;
@@ -71,6 +71,9 @@ export default { name: 'OsteopathieSection' }
 }
 .osteo__grid-item:hover img {
   transform: scale(1.05);
+}
+.osteo__img-cheval {
+  object-position: top right;
 }
 @media (max-width: 520px) {
   .osteo__grid {

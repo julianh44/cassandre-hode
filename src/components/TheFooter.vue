@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="footer__top">
-      <img src="@/assets/logo/logo-mark-dark.jpg" alt="Logo Cassandre Hodé" class="footer__logo" />
+      <img src="@/assets/logo/logo-mark-dark.webp" alt="Logo Cassandre Hodé" class="footer__logo" />
       <div class="footer__socials">
         <a href="#" aria-label="Facebook" class="footer__social">
           <svg viewBox="0 0 320 512" width="14" height="14" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
@@ -52,7 +52,7 @@ export default { name: 'TheFooter' }
   justify-content: center;
   width: 32px;
   height: 32px;
-  background: rgba(48, 15, 22, 0.7);
+  background: rgba(44, 18, 22, 0.7);
   border-radius: 50%;
   color: var(--color-cream);
 }

@@ -36,7 +36,7 @@ export default { name: 'BiomecanisteSection' }
   margin-right: auto;
 }
 .bio__card {
-  background: rgba(48, 15, 22, 0.05);
+  background: rgba(44, 18, 22, 0.05);
   border-radius: 12px;
   padding: 2rem 1.5rem;
   text-align: center;

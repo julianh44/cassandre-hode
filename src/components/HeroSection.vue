@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <img src="@/assets/images/contact-fin.jpg" alt="Cassandre Hodé avec un cheval" class="hero__photo" />
+    <img src="@/assets/images/contact-fin.webp" alt="Cassandre Hodé avec un cheval" class="hero__photo" />
     <div class="hero__bubble">
       <h1 class="hero__name">Cassandre<br />Hodé</h1>
       <p class="hero__subtitle">Ostéopathe animalier</p>
@@ -39,7 +39,7 @@ export default { name: 'HeroSection' }
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
-  background: rgba(48, 15, 22, 0.55);
+  background: rgba(44, 18, 22, 0.55);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border-radius: 12px;
