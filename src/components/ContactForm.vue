@@ -81,9 +81,9 @@ export default {
 <style scoped>
 .contact-form {
   position: relative;
-  border: 2px solid var(--color-dark);
-  border-radius: 4px;
-  padding: 1.5rem;
+  background: rgba(48, 15, 22, 0.04);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
   margin: 2rem auto 0;
   max-width: 560px;
   text-align: left;
@@ -100,21 +100,27 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   font-weight: 500;
+  text-transform: uppercase;
 }
 .contact-form input,
 .contact-form textarea {
   border: none;
-  border-bottom: 1.5px solid var(--color-dark);
+  border-bottom: 1.5px solid rgba(48, 15, 22, 0.25);
   background: transparent;
-  padding: 0.4rem 0;
+  padding: 0.5rem 0;
   font-family: inherit;
   font-size: 1rem;
   color: var(--color-dark);
   outline: none;
   resize: vertical;
+  transition: border-color 0.2s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom-color: var(--color-dark);
 }
 .contact-form__honeypot {
   position: absolute !important;
@@ -124,17 +130,24 @@ export default {
 }
 .contact-form__submit {
   align-self: center;
-  background: none;
+  background: var(--color-dark);
+  color: var(--color-cream);
   border: none;
-  border: 1.5px solid var(--color-dark);
-  padding: 0.8rem 2rem;
-  font-weight: 700;
+  border-radius: 6px;
+  padding: 0.9rem 2.5rem;
+  font-weight: 600;
+  font-size: 0.85rem;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
   cursor: pointer;
   font-family: inherit;
   width: 100%;
   text-align: center;
   margin-top: 0.5rem;
+  transition: opacity 0.2s;
+}
+.contact-form__submit:hover {
+  opacity: 0.85;
 }
 .contact-form__submit:disabled {
   opacity: 0.5;
@@ -152,7 +165,7 @@ export default {
 }
 @media (min-width: 768px) {
   .contact-form {
-    padding: 2rem 2.5rem;
+    padding: 2.5rem 3rem;
   }
 }
 </style>

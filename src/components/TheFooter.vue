@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="footer__top">
-      <img src="@/assets/logo/logo-mark.jpg" alt="Logo Cassandre Hodé" class="footer__logo" />
+      <img src="@/assets/logo/logo-mark-dark.jpg" alt="Logo Cassandre Hodé" class="footer__logo" />
       <div class="footer__socials">
         <a href="#" aria-label="Facebook" class="footer__social">
           <svg viewBox="0 0 320 512" width="14" height="14" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
@@ -24,10 +24,9 @@ export default { name: 'TheFooter' }
 
 <style scoped>
 .footer {
-  background: var(--color-bg);
-  color: var(--color-dark);
+  background: var(--color-dark);
+  color: var(--color-cream);
   padding: 2rem 1.5rem;
-  border-top: 1px solid var(--color-dark);
   text-align: center;
 }
 .footer__top {
@@ -38,13 +37,14 @@ export default { name: 'TheFooter' }
   margin: 0 auto 1.2rem;
 }
 .footer__logo {
-  height: 80px;
+  height: 120px;
   width: auto;
+  border-radius: 8px;
 }
 .footer__socials {
   display: flex;
   gap: 1rem;
-  color: var(--color-dark);
+  color: var(--color-cream);
 }
 .footer__social {
   display: flex;
@@ -73,7 +73,7 @@ export default { name: 'TheFooter' }
     padding: 2.5rem 2.5rem;
   }
   .footer__logo {
-    height: 100px;
+    height: 140px;
   }
 }
 </style>

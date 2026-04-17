@@ -10,6 +10,7 @@
   --color-dark: #300F16;
   --color-cream: #EDC6AF;
   --color-accent: #D4A98B;
+  --color-light: #F5DFD0;
 
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Epilogue", system-ui, sans-serif;
@@ -19,6 +20,10 @@
 
 * { box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -26,7 +31,7 @@ html, body {
   color: var(--color-dark);
   font-family: var(--font-sans);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -41,31 +46,67 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 
 .section {
-  padding: 4rem 1.5rem;
+  padding: 4.5rem 1.5rem;
   max-width: var(--max-width);
   margin: 0 auto;
   text-align: center;
 }
 
+.section--dark {
+  max-width: none;
+  background: var(--color-dark);
+  color: var(--color-cream);
+  padding-left: max(1.5rem, calc((100% - var(--max-width)) / 2));
+  padding-right: max(1.5rem, calc((100% - var(--max-width)) / 2));
+}
+
+.section--dark .section__title,
+.section--dark .section__subtitle {
+  color: var(--color-cream);
+}
+
+.section--dark .section__divider {
+  background: var(--color-cream);
+}
+
+.section--alt {
+  max-width: none;
+  background: var(--color-light);
+  padding-left: max(1.5rem, calc((100% - var(--max-width)) / 2));
+  padding-right: max(1.5rem, calc((100% - var(--max-width)) / 2));
+}
+
 .section__title {
-  font-family: var(--font-sans);
-  font-weight: 700;
-  font-size: 1.4rem;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.6rem;
+}
+
+.section__subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.6;
   margin: 0 0 1rem;
+  font-weight: 500;
 }
 
 .section__divider {
-  width: 120px;
-  height: 3px;
+  width: 60px;
+  height: 2px;
   background: var(--color-dark);
-  margin: 0 auto 2rem;
+  margin: 0 auto 2.5rem;
   border: none;
+  opacity: 0.4;
 }
 
 .section p {
   margin: 0 0 1.2rem;
+  font-size: 0.95rem;
 }
 
 @media (min-width: 768px) {
@@ -73,10 +114,13 @@ img { max-width: 100%; display: block; }
     --max-width: 860px;
   }
   .section {
-    padding: 5rem 2.5rem;
+    padding: 5.5rem 2.5rem;
   }
   .section__title {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+  }
+  .section p {
+    font-size: 1rem;
   }
 }
 
@@ -85,6 +129,9 @@ img { max-width: 100%; display: block; }
     --max-width: 960px;
   }
   .section {
-    padding: 6rem 2rem;
+    padding: 7rem 2rem;
+  }
+  .section__title {
+    font-size: 2.5rem;
   }
 }
