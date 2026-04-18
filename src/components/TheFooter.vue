@@ -21,7 +21,7 @@
           <li class="footer__zone">Ancenis et alentours<br />(44, 49, 85, 53)</li>
         </ul>
       </div>
-      <div class="footer__col">
+      <div class="footer__col footer__col--socials">
         <div class="footer__socials">
           <a href="https://www.facebook.com/profile.php?id=61582036331972" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social">
             <svg viewBox="0 0 320 512" width="14" height="14" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
@@ -162,6 +162,11 @@ export default { name: 'TheFooter' }
   }
   .footer__col--brand {
     flex: 0 0 auto;
+  }
+  .footer__col--socials {
+    flex: 0 0 auto;
+    align-self: flex-end;
+    align-items: flex-end;
   }
   .footer__logo {
     height: 130px;
