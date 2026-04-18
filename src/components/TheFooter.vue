@@ -165,7 +165,6 @@ export default { name: 'TheFooter' }
   }
   .footer__col--socials {
     flex: 0 0 auto;
-    align-self: flex-end;
     align-items: flex-end;
   }
   .footer__logo {
