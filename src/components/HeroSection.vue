@@ -34,16 +34,20 @@ export default { name: 'HeroSection' }
   width: 100%;
   display: block;
   object-fit: cover;
-  object-position: 60% center;
+  object-position: 60% 60%;
   min-height: 100vh;
   min-height: 100lvh;
 }
 @media (min-width: 768px) {
   .hero {
-    margin-top: -102px;
+    margin-top: 0;
+    min-height: calc(100vh - 102px);
+    min-height: calc(100lvh - 102px);
   }
   .hero__photo {
     object-position: center;
+    min-height: calc(100vh - 102px);
+    min-height: calc(100lvh - 102px);
   }
 }
 .hero__bubble {
