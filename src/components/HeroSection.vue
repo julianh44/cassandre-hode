@@ -25,33 +25,21 @@ export default { name: 'HeroSection' }
 .hero {
   position: relative;
   background: var(--color-dark);
-  min-height: calc(100vh - 92px);
-  min-height: calc(100lvh - 92px);
+  height: calc(100vh - 92px);
+  height: calc(100dvh - 92px);
   display: flex;
-}
-.hero::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  height: env(safe-area-inset-bottom, 0px);
-  background: var(--color-dark);
-  pointer-events: none;
 }
 .hero__photo {
   width: 100%;
   display: block;
   object-fit: cover;
   object-position: 60% center;
-  min-height: calc(100vh - 92px);
-  min-height: calc(100lvh - 92px);
+  height: 100%;
 }
 @media (min-width: 768px) {
-  .hero,
-  .hero__photo {
-    min-height: calc(100vh - 102px);
-    min-height: calc(100lvh - 102px);
+  .hero {
+    height: calc(100vh - 102px);
+    height: calc(100dvh - 102px);
   }
   .hero__photo {
     object-position: center;
