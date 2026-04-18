@@ -6,7 +6,7 @@
       <p class="hero__subtitle">Ostéopathe animalier</p>
       <a href="tel:+33671300321" class="hero__phone">06 71 30 03 21</a>
       <div class="hero__socials">
-        <a href="#" aria-label="Facebook" class="hero__social">
+        <a href="https://www.facebook.com/profile.php?id=61582036331972" target="_blank" rel="noopener" aria-label="Facebook" class="hero__social">
           <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm3.1 8.4h-1.6c-.6 0-.7.3-.7.7v1.3h2.3l-.3 2.3h-2v5.9h-2.4v-5.9H8.7v-2.3h1.7V8.9c0-1.7 1-2.6 2.6-2.6.7 0 1.4.1 1.4.1v1.6l-.3.4z"/></svg>
         </a>
         <a href="https://www.instagram.com/cassandre_osteoanimalier/" target="_blank" rel="noopener" aria-label="Instagram" class="hero__social">
@@ -29,7 +29,16 @@ export default { name: 'HeroSection' }
   width: 100%;
   display: block;
   object-fit: cover;
-  height: calc(100vh - 80px);
+  object-position: 60% center;
+  height: calc(100vh - 92px);
+  height: calc(100dvh - 92px);
+}
+@media (min-width: 768px) {
+  .hero__photo {
+    object-position: center;
+    height: calc(100vh - 102px);
+    height: calc(100dvh - 102px);
+  }
 }
 .hero__bubble {
   position: absolute;

@@ -9,6 +9,7 @@ const routes = [
     name: 'politique',
     component: PolitiqueConfidentialitePage,
   },
+  { path: '/:pathMatch(.*)*', redirect: { name: 'home' } },
 ]
 
 const router = createRouter({

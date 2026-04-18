@@ -111,6 +111,7 @@ export default {
   letter-spacing: 0.08em;
   font-weight: 500;
   text-transform: uppercase;
+  min-width: 0;
 }
 .contact-form input,
 .contact-form textarea {
@@ -124,6 +125,9 @@ export default {
   outline: none;
   resize: vertical;
   transition: border-color 0.2s;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {

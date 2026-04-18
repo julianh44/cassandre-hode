@@ -4,7 +4,7 @@
     <h2 class="section__title">Présentation</h2>
     <hr class="section__divider" />
     <div class="presentation__content">
-      <img src="@/assets/images/hero-cheval.webp" alt="Cassandre Hodé en consultation" class="presentation__photo" />
+      <img src="@/assets/images/presentation-cassandre.jpg" alt="Cassandre Hodé, ostéopathe animalier" class="presentation__photo" />
       <div class="presentation__text">
         <p>
           Je m'appelle Cassandre Hodé, après 5 années d'études à Biopraxia Rennes j'ai obtenu mon diplôme d'ostéopathe animalier en 2025 puis validé mes compétences auprès du Conseil de l'Ordre National des Vétérinaires en 2026.
@@ -43,14 +43,14 @@ export default { name: 'PresentationSection' }
   border-radius: 12px;
 }
 .presentation__text {
-  text-align: left;
+  text-align: center;
 }
 .presentation__species {
   margin-top: 0.5rem;
 }
 .presentation__reg {
   margin-top: 1.5rem;
-  text-align: left;
+  text-align: center;
 }
 .presentation__reg-badge {
   display: inline-block;
@@ -72,6 +72,10 @@ export default { name: 'PresentationSection' }
     min-width: 280px;
     max-width: 320px;
     aspect-ratio: 3/4;
+  }
+  .presentation__text,
+  .presentation__reg {
+    text-align: left;
   }
 }
 </style>
