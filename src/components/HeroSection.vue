@@ -24,20 +24,27 @@ export default { name: 'HeroSection' }
 <style scoped>
 .hero {
   position: relative;
+  background: var(--color-dark);
+  min-height: calc(100vh - 92px);
+  min-height: calc(100dvh - 92px);
+  display: flex;
 }
 .hero__photo {
   width: 100%;
   display: block;
   object-fit: cover;
   object-position: 60% center;
-  height: calc(100vh - 92px);
-  height: calc(100dvh - 92px);
+  min-height: calc(100vh - 92px);
+  min-height: calc(100dvh - 92px);
 }
 @media (min-width: 768px) {
+  .hero,
+  .hero__photo {
+    min-height: calc(100vh - 102px);
+    min-height: calc(100dvh - 102px);
+  }
   .hero__photo {
     object-position: center;
-    height: calc(100vh - 102px);
-    height: calc(100dvh - 102px);
   }
 }
 .hero__bubble {
