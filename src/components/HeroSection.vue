@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <img src="@/assets/images/contact-fin.webp" alt="Cassandre Hodé avec un cheval" class="hero__photo" />
+    <img src="@/assets/images/contact-fin.webp" alt="Cassandre Hodé avec un cheval" class="hero__photo" fetchpriority="high" loading="eager" decoding="async" />
     <div class="hero__bubble">
       <h1 class="hero__name">Cassandre<br />Hodé</h1>
       <p class="hero__subtitle">Ostéopathe animalier</p>
@@ -26,7 +26,7 @@ export default { name: 'HeroSection' }
   position: relative;
   background: var(--color-dark);
   min-height: calc(100vh - 92px);
-  min-height: calc(100dvh - 92px);
+  min-height: calc(100lvh - 92px);
   display: flex;
 }
 .hero__photo {
@@ -35,13 +35,13 @@ export default { name: 'HeroSection' }
   object-fit: cover;
   object-position: 60% center;
   min-height: calc(100vh - 92px);
-  min-height: calc(100dvh - 92px);
+  min-height: calc(100lvh - 92px);
 }
 @media (min-width: 768px) {
   .hero,
   .hero__photo {
     min-height: calc(100vh - 102px);
-    min-height: calc(100dvh - 102px);
+    min-height: calc(100lvh - 102px);
   }
   .hero__photo {
     object-position: center;

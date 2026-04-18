@@ -15,13 +15,13 @@
     </blockquote>
     <div class="osteo__grid">
       <div class="osteo__grid-item">
-        <img src="@/assets/images/osteo-vache.webp" alt="Ostéopathie sur une vache" />
+        <img src="@/assets/images/osteo-vache.webp" alt="Ostéopathie sur une vache" loading="lazy" decoding="async" />
       </div>
       <div class="osteo__grid-item">
-        <img src="@/assets/images/osteo-veau.webp" alt="Ostéopathie sur un veau" />
+        <img src="@/assets/images/osteo-veau.webp" alt="Ostéopathie sur un veau" loading="lazy" decoding="async" />
       </div>
       <div class="osteo__grid-item">
-        <img src="@/assets/images/osteo-cheval-dos.webp" alt="Ostéopathie sur un cheval" class="osteo__img-cheval" />
+        <img src="@/assets/images/osteo-cheval-dos.webp" alt="Ostéopathie sur un cheval" class="osteo__img-cheval" loading="lazy" decoding="async" />
       </div>
     </div>
   </section>

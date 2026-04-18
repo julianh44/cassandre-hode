@@ -27,7 +27,7 @@
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
           </a>
         </div>
-        <img src="@/assets/images/hero-cheval.webp" alt="Mains sur un cheval" class="contact__photo" />
+        <img src="@/assets/images/hero-cheval.webp" alt="Mains sur un cheval" class="contact__photo" loading="lazy" decoding="async" />
       </div>
       <div class="contact__right">
         <h3 class="contact__form-title">Formulaire de contact</h3>
