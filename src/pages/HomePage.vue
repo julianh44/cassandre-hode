@@ -1,11 +1,13 @@
 <template>
   <div>
     <TheHeader />
-    <HeroSection />
-    <PresentationSection />
-    <OsteopathieSection />
-    <BiomecanisteSection />
-    <ContactSection />
+    <main>
+      <HeroSection />
+      <PresentationSection />
+      <OsteopathieSection />
+      <BiomecanisteSection />
+      <ContactSection />
+    </main>
     <TheFooter />
   </div>
 </template>
