@@ -1,7 +1,7 @@
 services:
   app:
     build: .
-    container_name: osteo-cassandre-hode
+    container_name: cassandre-hode-osteo
     env_file: .env
     restart: unless-stopped
     networks:
