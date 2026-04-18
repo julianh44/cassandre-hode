@@ -47,7 +47,7 @@ export default { name: 'HeroSection' }
 }
 .hero__bubble {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: max(1.5rem, calc(env(safe-area-inset-bottom) + 0.75rem));
   left: 1.5rem;
   display: flex;
   flex-direction: column;

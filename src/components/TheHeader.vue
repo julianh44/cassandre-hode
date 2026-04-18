@@ -34,6 +34,7 @@ export default {
   z-index: 100;
   background: var(--color-dark);
   padding: 1rem 1.5rem;
+  padding-top: max(1rem, env(safe-area-inset-top));
   display: flex;
   align-items: center;
   justify-content: space-between;
